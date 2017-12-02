@@ -1,0 +1,67 @@
+<html>
+
+<head>
+
+  <!--stylesheets-->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body>
+  <!-- background canvases -->
+  <canvas id="bgChart" width="100%" height="75%"> </canvas>
+  <div class="container" id="part1">
+    <div class="titleCard">
+      <h1> Myometrics </h1>
+      <p>  </p>
+      <div id="dropArea">Drop .fbt file here</div>
+    </div>
+  </div>
+  <div class = "container" id = "part2"></div>
+  <div class="container" id="part3">
+    <div class="title">
+      <h1> Results </h1>
+      <p> Name: <code id = "name"></code> Time <code id = "time"></code></p>
+    </div>
+
+    <div class="resultCard">
+      <h4 class="centerText"> Position </h4>
+      <canvas id="positionChart" width="100%" height="50%"></canvas>
+    </div>
+    <div class="med"><br></div>
+    <div class="resultCard">
+      <h4 class="centerText"> Gyroscope </h4>
+      <canvas id="gyro" width="100%" height="50%"></canvas>
+    </div>
+    <div class="med"><br></div>
+    <div class="resultCard">
+      <h4 class="centerText"> Acceleration </h4>
+      <canvas id="xAccel" width="100%" height="50%"></canvas>
+      <div class="med"><br></div>
+      <canvas id="yAccel" width="100%" height="50%"></canvas>
+      <div class="med"><br></div>
+      <canvas id="zAccel" width="100%" height="50%"></canvas>
+      <div class="med"><br></div>
+    </div>
+    <div class="med"><br></div>
+    <div class="row">
+      <div class="four columns"><br></div>
+      <div class="four columns">
+        <button class = "u-full-width" onClick = "window.location = 'index.html';"  style = "text-align:center"> Back </button>
+      </div>
+      <div class="four columns"><br></div>
+    </div>
+
+  </div>
+
+  <!-- js libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.js"></script>
+  <script src="js/sampleData.js"></script>
+  <script src="js/handleBgChart.js"></script>
+  <script src="js/fileHandler.js"></script>
+  <script src="js/displayData.js"></script>
+</body>
+
+</html>

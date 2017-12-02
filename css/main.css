@@ -1,0 +1,72 @@
+#dropArea {
+  width: 50%;
+  padding: 10%;
+  margin: 0 auto;
+  margin-top: 5%;
+  text-align: center;
+  background-color: rgb(254, 254, 254);
+  color: rgb(200, 200, 200);
+  border-style: dashed;
+  border-width: medium;
+  border-color: rgb(200, 200, 200);
+}
+
+#bgChart {
+  z-index: -1 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+body{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.med {
+  height: 5%;
+  width: 100%;
+}
+.titleCard {
+  width: 50%;
+  padding: 5%;
+  text-align: center;
+  margin: 25% auto;
+  background-color: white;
+  border-radius: 1%;
+  border-width: medium;
+  border-color: rgb(200, 200, 200);
+  border-style: solid;
+  animation-name: floatUp;
+  animation-duration: 1s;
+}
+.centerText {
+  text-align: center;
+}
+.resultCard {
+  width: 75%;
+  margin: 2% auto;
+  background-color: rgb(240, 240, 240)
+  border-color: rgb(200, 200, 200);
+  border-style: solid;
+
+}
+.title {
+  margin-top: 7.5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+#part3{
+  visibility: hidden;
+}
+@keyframes floatUp {
+  0%{
+    margin-top: 100%;
+    opacity: 0;
+    transform: rotate(50deg);
+  }
+  100%{
+    margin-top: 25%;
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
